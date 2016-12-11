@@ -1,0 +1,63 @@
+#intro{
+  opacity: 1;
+  transition: 1s;
+  height: 100vh;
+}
+
+#intro #me {
+  border: 1px solid black;
+  flex-basis: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s all;
+  position: relative;
+  animation-name: colgante;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+#intro #me div {
+  position: relative;
+  background: #000;
+  height: 50px;
+  width: 50px;
+  transform: rotate(45deg);
+  animation-name: colgante;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+ #intro a{
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  background: #000;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+#intro a:hover + #me{
+    background: rgb(19, 143, 117);
+}
+#intro a:hover + #me div{
+  background: white;
+  border: 1px solid black;
+}
+
+
+@keyframes colgante{
+  0%  {transform: rotate(0deg);}
+  25% {transform: rotate(20deg);}
+  75% {transform: rotate(-20deg);}
+  100% {transform: rotate(0deg);}
+}

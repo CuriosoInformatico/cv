@@ -1,0 +1,48 @@
+/*
+  Samuel López Saura 2016
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*/
+
+@import 'intro.css';
+@import 'about-me.css';
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.column{
+  flex-direction: column-reverse;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.center-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.invisible{
+  opacity: 0 !important;
+}
+
+.bar{
+  margin: 5px;
+  padding: 4px;
+  background: #80cbc4;
+}

@@ -1,0 +1,81 @@
+
+#about-me{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: 100%;
+  min-height: 100%;
+  background: #F5F5F5;
+  transition: right 1s .5s;
+  justify-content: space-between;
+
+}
+
+#about-me.activated{
+  right: 0% !important;
+}
+
+#about-me > div{
+  display: flex;
+  align-items: center;
+}
+
+#about-me div:nth-child(1){
+  background: #eee;
+  flex-basis: 30%;
+
+}
+
+#about-me div:nth-child(1) img{
+  width: 100%;
+  min-width: 70px;
+}
+
+#about-me div:nth-child(2){
+  flex-basis: 65%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about-me div:nth-child(2) p{
+  padding: 5px 20px;
+  text-align: justify;
+
+}
+
+#about-me div:nth-child(2) #buttons {
+  padding: 20px 0px;
+
+}
+#about-me div:nth-child(2) #buttons button{
+  border: none;
+  margin: 0px 4px;
+  background: #26A69A;
+  border-radius: 4px;
+  padding: 5px;
+}
+#about-me div:nth-child(2) #buttons button:hover{
+  background: #009688;
+}
+
+@media (max-width: 700px) {
+  #about-me{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #about-me div:nth-child(2){
+    flex-direction: column-reverse;
+  }
+
+  #about-me div:nth-child(2) > p{
+    margin-bottom: 40px;
+    
+  }
+  #menu{
+    padding: 20px;
+  }
+  #menu img{
+    height: 200px;
+    width: 100px;
+  }
+}
